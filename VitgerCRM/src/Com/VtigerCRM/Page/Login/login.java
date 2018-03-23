@@ -1,5 +1,7 @@
 package Com.VtigerCRM.Page.Login;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class login {
@@ -14,6 +16,7 @@ public class login {
 		driver.get("https://yahoo.com");
 		
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 	}
 	
 	
